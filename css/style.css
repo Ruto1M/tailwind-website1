@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/Gilroy-Light.otf');
+}
+
+@font-face {
+    font-family: 'Gilroy2';
+    src: url("../fonts/gilroy/Gilroy-ExtraBold.otf");
+}
+
+@layer base {
+    p + p {
+        margin-top: 1rem; 
+    }
+}
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.card-wrapper.flipped .card-inner {
+  transform: rotateY(180deg);
+}
