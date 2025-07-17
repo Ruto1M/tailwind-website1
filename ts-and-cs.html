@@ -9,50 +9,88 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="overflow-x-hidden min-h-screen flex-col">
-    <!-- navigation -->
     <header>
-        <div class="logo flex justify-center max-w-[1110px] h[50px] mx-auto mt-4 mb-4">
+        <div class="logo flex justify-between max-w-[1110px] h[50px] mx-auto mt-2 ">
             <h1 class=" flex font-[rubik] items-center font-bold text-2xl">
                 <a href="index.html">Brainwave.io</a>
             </h1>
+            <nav class="font-[gilroy2]">
+            <ul class="menu-nav hidden md:flex flex-row  items-center justify-end space-x-6 ">
+                <li><a href="#demos" class="">Demos</a></li>
+                <li><a href="#pages" class="">Pages</a></li>
+                <li><a href="#support" class="">Support</a></li>
+                <li><a href="#contact" class="">Contact</a></li>
+                <div class="w-px h-[21px] bg-gray-300"></div>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <button class="w-[124px] h-[50px]  text-white bg-[#473BF0] rounded-lg">Sign Up</button>
+            </ul>
+        </nav>
         </div>
+       
+
+
     </header>
-
-    <main class="font-[gilroy] min-h-screen overflow-x-hidden bg-[#F4F7FA]">
-        <section class="flex flex-col items-center justify-center px-4 pt-24 pb">
-            <div class="hero justify-center w-full max-w-[601px] h-auto">
-                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Login</h2>
-                <p class="mt-[40px] text-center ">To get started, you need to sign in here.</p>
-            </div>
-        
-
-            <div class="grid grid-cols-1 gap-2 max-w-7xl mx-auto px-4 py-12 ">
-                <!-- Sign in-->
-                <div class=" font-[gilroy] rounded-md p-10 hover:shadow-lg transition bg-white ">
-                    <form class="space-y-6" action="index.html" method="get">
-                        <div>
-                            <label for="email" class="block font-medium font-[gilroy2]">Email</label>
-                            <input type="email" id="email" name="email" placeholder="i.e. john@mail.com" required class="mt-1 w-full px-4 py-1.5 border border-gray-300 rounded-md focus:outline-none ">
-                        </div>
-                        <div>
-                            <div class="flex items-center justify-between">   
-                                <label for="Password" class="block font-medium font-[gilroy2]">Password</label>
-                                <a href="passreset.html" class="text-sm text-[#473BF0]">Forgot password?</a>
-                            </div>
-                            <input type="password" id="password" name="password" placeholder="********" class="mt-1 w-full px-4 py-1.5 border border-gray-300 rounded-md focus:outline-none ">
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="remember" class="h-4 w-4 accent-[#473BF0] focus:ring-[#473BF0] border-gray-300 rounded"/>
-                            <label for="remember" class="ml-2 block text-sm text-[#161C2D]">Remember me</label>
-                        </div>
-                        <button type="submit" class="font-[gilroy2] w-full bg-[#473BF0] text-white py-2 rounded-md hover:bg-blue-700 transition duration-200">
-                            Sign In
-                        </button>
-                    </form>
-                </div>
-                <p class="text-center mt-5 ">Don’t have an account? <a href="signup.html" class="text-[#473BF0] hover:underline">Create an account</a></p>
+    <main class="font-[gilroy] min-h-screen overflow-x-hidden">
+        <section class="flex flex-col items-center justify-center px-4 pt-24 pb-0">
+            <div class="hero justify-center w-full max-w-[640px] h-[202px]">
+                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Terms & Conditions</h2>
+                <p class="mt-[50px] text-center ">By accessing and placing an order with UXTheme, you confirm that you are in agreement with and bound by the terms and conditions</p>
             </div>
         </section>
+        <section class="flex flex-col items-center justify-center ">
+            <div class="hero justify-center w-full max-w-[731px] ">
+                <p class="mt-[50px] ">By accessing and placing an order with UXTheme, 
+                    you confirm that you are in agreement with and bound by the terms and conditions contained in the Terms Of Use outlined below. 
+                    These terms apply to the entire website and any email or other type of communication between you and UXTheme. 
+                    Under no circumstances shall UXTheme team be liable for any direct, indirect, special, incidental or consequential damages, 
+                    including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site,
+                    even if UXTheme team or an authorized representative has been advised of the possibility of such damages. 
+                    If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, 
+                    you assume any costs thereof. UXTheme will not be responsible for any outcome that may occur during the course of usage of our resources.
+                </p>
+            </div>
+            <div class="hero justify-center w-full max-w-[731px] pb-6">
+                <h3 class="mt-6 font-[gilroy2] font-normal text-xl">License</h3>
+                <p class="mt-5">By purchasing or downloading resource (“item” or “file”) you are being granted
+                    a license to use these files for specific uses under certain conditions. 
+                    Ownership remains with UXTheme, and you are required to abide by the following licensing terms.
+                </p>
+            </div>
+            <div class="hero justify-center w-full max-w-[731px] pb-12">
+                <h3 class="mt-6 font-[gilroy2] font-normal text-xl mb-6">Security</h3>
+                <ol class="list-decimal list-inside space-y-4 ">
+                    <li class="flex items-start whitespace-nowrap"><span class="inline-block w-1.5 h-1.5 bg-current rounded-full mr-2 mt-2 flex-shrink-0"></span>
+                        You have rights for royalty free use of our resources for any or all of your personal.</span></li>
+                    <li class="flex items-start whitespace-nowrap"><span class="inline-block w-1.5 h-1.5 bg-current rounded-full mr-2 mt-2 flex-shrink-0"></span>
+                        You are not required to attribute or link to UXTheme in any of projects.</span></li>
+                    <li class="flex items-start whitespace-nowrap"><span class="inline-block w-1.5 h-1.5 bg-current rounded-full mr-2 mt-2 flex-shrink-0"></span>
+                        We reserve the rights to change prices and revise the resources usage policy in any moment.</span></li>
+                </ol>
+            </div>
+            <div class="hero justify-center w-full max-w-[731px] pb-12">
+                <h3 class="mt-6 font-[gilroy2] font-normal text-xl">Embedded content from other websites</h3>
+                <p class="mt-5">Articles on this site may include embedded content (e.g. videos, images, articles, etc.). 
+                    Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.
+                    <br><br>
+                    These websites may collect data about you, use cookies, embed additional third-party tracking,
+                    and monitor your interaction with that embedded content, 
+                    including tracking your interaction with the embedded content if you have an account and are logged in to that website.
+                </p>
+            </div>
+            <div class="hero justify-center w-full max-w-[731px] pb-12">
+                <h3 class="mt-6 font-[gilroy2] font-normal text-xl">Changes about terms</h3>
+                <p class="mt-5">If we change our terms of use we will post those changes on this page. 
+                    Registered users will be sent an email that outlines changes made to the terms of use.
+                </p>
+            </div>
+        </section>
+
+
+
+
+
+
+
     </main>
     <footer class="bg-[#161C2D] text-white font-[gilroy] h-auto px-4 sm:px-8 md:px-16 lg:px-24 ">
        <div class="max-w-5xl mx-auto grid w-fit text-center md:text-left grid-rows-5 md:grid-rows-1 md:grid-cols-5 gap-8 pt-22 pb-15">
@@ -60,7 +98,7 @@
                 <h3 class="text-lg gap-2 mb-5 text-[#FFFFFFA6]">Company</h3>
             <ul class="grid gap-2">
                 <li><a href="index.html">About us</a></li>
-                <li>Contact us</li>
+                <li><a href="contact.html">Contact us</a></li>
                 <li>Careers</li>
                 <li>Press</li>
             </ul>
@@ -90,7 +128,7 @@
                 <h3 class="heading-lead text-lg gap-2 mb-5 text-[#FFFFFFA6]">Legal</h3>
             <ul class="grid gap-2">
                 <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
+                <li><a href="ts-and-cs.html">Terms & Conditions</a></li>
                 <li>Return Policy</li>
             </ul>
             </div>
@@ -119,7 +157,7 @@
               class="facebook hover:text-[#68D585] transition-colors duration-500"
             >
             <svg  width="19" height="19" viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 9.5573C18.9992 4.4726 15.0424 0.278485 9.99592 0.0132214C4.94945 -0.252042 0.579855 3.50441 0.0525261 8.56134C-0.474803 13.6183 3.02473 18.2055 8.01601 19V12.3203H5.60428V9.5573H8.01601V7.45142C8.01601 5.0558 9.43443 3.73253 11.6039 3.73253C12.3164 3.74247 13.0272 3.80477 13.7307 3.91892V6.27153H12.5325C12.1189 6.21626 11.7028 6.35325 11.4017 6.64381C11.1006 6.93437 10.9471 7.34697 10.9847 7.76506V9.5573H13.6196L13.1981 12.3203H10.9847V19C15.6013 18.2651 19.0007 14.2603 19 9.5573Z" fill="currentColor"/>
+                <path d="M19 9.5573C18.9992 4.4726 15.0424 0.278485 9.99592 0.0132214C4.94945 -0.252042 0.579855 3.50441 0.0525261 8.56134C-0.474803 13.6183 3.02473 18.2055 8.01731 19V12.3203H5.60428V9.5573H8.01731V7.45142C8.01731 5.0558 9.43443 3.73253 11.6039 3.73253C12.3164 3.74247 13.0272 3.80477 13.7307 3.91892V6.27153H12.5325C12.1189 6.21626 11.7028 6.35325 11.4017 6.64381C11.1006 6.93437 10.9471 7.34697 10.9847 7.76506V9.5573H13.6196L13.1981 12.3203H10.9847V19C15.7313 18.2651 19.0007 14.2603 19 9.5573Z" fill="currentColor"/>
             </svg>
 
             </a>
@@ -147,5 +185,3 @@
     </footer>
 </body>
 </html>
-    
-       

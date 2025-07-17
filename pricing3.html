@@ -9,50 +9,130 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="overflow-x-hidden min-h-screen flex-col">
-    <!-- navigation -->
     <header>
-        <div class="logo flex justify-center max-w-[1110px] h[50px] mx-auto mt-4 mb-4">
+        <div class="logo flex justify-between w-[1110px] h[50px] mx-auto mt-2 ">
             <h1 class=" flex font-[rubik] items-center font-bold text-2xl">
                 <a href="index.html">Brainwave.io</a>
             </h1>
+            <nav class="font-[gilroy2]">
+            <ul class="menu-nav hidden md:flex flex-row  items-center justify-end space-x-6 ">
+                <li><a href="#demos" class="">Demos</a></li>
+                <li><a href="#pages" class="">Pages</a></li>
+                <li><a href="#support" class="">Support</a></li>
+                <li><a href="#contact" class="">Contact</a></li>
+                <div class="w-px h-[21px] bg-gray-300"></div>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <button class="w-[124px] h-[50px]  text-white bg-[#473BF0] rounded-lg">Sign Up</button>
+            </ul>
+        </nav>
         </div>
-    </header>
+       
 
+
+    </header>
     <main class="font-[gilroy] min-h-screen overflow-x-hidden bg-[#F4F7FA]">
-        <section class="flex flex-col items-center justify-center px-4 pt-24 pb">
-            <div class="hero justify-center w-full max-w-[601px] h-auto">
-                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Login</h2>
-                <p class="mt-[40px] text-center ">To get started, you need to sign in here.</p>
+        <section class="flex flex-col items-center justify-center px-4 pt-24 pb-20">
+            <div class="hero justify-center w-full max-w-[601px] h-[202px]">
+                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Pricing & Plans</h2>
+                <p class="mt-[50px] text-center ">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
             </div>
         
 
-            <div class="grid grid-cols-1 gap-2 max-w-7xl mx-auto px-4 py-12 ">
-                <!-- Sign in-->
-                <div class=" font-[gilroy] rounded-md p-10 hover:shadow-lg transition bg-white ">
-                    <form class="space-y-6" action="index.html" method="get">
-                        <div>
-                            <label for="email" class="block font-medium font-[gilroy2]">Email</label>
-                            <input type="email" id="email" name="email" placeholder="i.e. john@mail.com" required class="mt-1 w-full px-4 py-1.5 border border-gray-300 rounded-md focus:outline-none ">
-                        </div>
-                        <div>
-                            <div class="flex items-center justify-between">   
-                                <label for="Password" class="block font-medium font-[gilroy2]">Password</label>
-                                <a href="passreset.html" class="text-sm text-[#473BF0]">Forgot password?</a>
-                            </div>
-                            <input type="password" id="password" name="password" placeholder="********" class="mt-1 w-full px-4 py-1.5 border border-gray-300 rounded-md focus:outline-none ">
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="remember" class="h-4 w-4 accent-[#473BF0] focus:ring-[#473BF0] border-gray-300 rounded"/>
-                            <label for="remember" class="ml-2 block text-sm text-[#161C2D]">Remember me</label>
-                        </div>
-                        <button type="submit" class="font-[gilroy2] w-full bg-[#473BF0] text-white py-2 rounded-md hover:bg-blue-700 transition duration-200">
-                            Sign In
-                        </button>
-                    </form>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mx-auto px-4 py-12">
+                <!-- Card 1 -->
+                <div class=" font-[gilroy] text-center rounded-sm p-10 hover:shadow-lg transition bg-white">
+                  <h3 class="text-xs font-[gilroy2] font-bold text-[#473BF0] mb-10 uppercase"><span class="inline-block px-4 py-[3px] bg-[#473BF01A]  text-[#473BF0] text-sm font-normal rounded-full uppercase">basic</span></h3>
+                  <p class=" font-[gilroy2] font-bold text-2xl ">$<span class="font-[gilroy2] font-bold text-6xl  mb-4">29</span> <span class="text-base font-[gilroy] font-normal text-gray-500">/ month</span></p>
+                  <p class="text-[#161C2DB3] pb-4">One time purchase</p>
+                  <p class="text-[#161C2DB3] pb-10">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+                  <a href="pricing2.html" class="block w-full">
+                    <div class="text-[#473BF0] hover:text-white transition-colors">
+                      <button class="w-full bg-[#473BF0] font-[gilroy2] text-white text-center p-4 font-bold py-3 rounded-md hover:bg-[#473BF01A] hover:text-[#473BF0] transition">
+                        Get started for free
+                      </button>
+                    </div>
+                  </a>
                 </div>
-                <p class="text-center mt-5 ">Don’t have an account? <a href="signup.html" class="text-[#473BF0] hover:underline">Create an account</a></p>
+            
+                <!-- Card 2 (highlighted) -->
+                <div class=" font-[gilroy] text-center rounded-sm p-10 hover:shadow-lg transition bg-white">
+                  <h3 class="text-xs font-[gilroy2] font-bold text-[#473BF0] mb-10 uppercase"><span class="inline-block px-4 py-[3px] bg-[#473BF01A]  text-[#473BF0] text-sm font-normal rounded-full uppercase">Standard</span></h3>
+                  <p class=" font-[gilroy2] font-bold text-2xl ">$<span class="font-[gilroy2] font-bold text-6xl  mb-4">49</span> <span class="text-base font-[gilroy] font-normal text-gray-500">/ month</span></p>
+                  <p class="text-[#161C2DB3] pb-4">One time purchase</p>
+                  <p class="text-[#161C2DB3] pb-10">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+                  <a href="pricing2.html" class="block w-full">
+                    <div class="text-[#473BF0] hover:text-white transition-colors">
+                      <button class="w-full bg-[#473BF0] font-[gilroy2] text-white text-center p-4 font-bold py-3 rounded-md hover:bg-[#473BF01A] hover:text-[#473BF0] transition">
+                        Get started for free
+                      </button>
+                    </div>
+                  </a>
+                </div>
+            
+                <!-- Card 3 -->
+                <div class=" font-[gilroy] text-center rounded-sm p-10 hover:shadow-lg transition bg-white">
+                  <h3 class="text-xs font-[gilroy2] font-normal text-[#473BF0] mb-10 uppercase"><span class="inline-block px-4 py-[3px] bg-[#473BF01A]  text-[#473BF0] text-sm font-normal rounded-full uppercase">Premium</span></h3>
+                  <p class=" font-[gilroy2] font-bold text-2xl ">$<span class="font-[gilroy2] font-bold text-6xl  mb-4">99</span> <span class="text-base font-[gilroy] font-normal text-gray-500">/ month</span></p>
+                  <p class="text-[#161C2DB3] pb-4">One time purchase</p>
+                  <p class="text-[#161C2DB3] pb-10">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+                  <a href="pricing2.html" class="block w-full">
+                    <div class="text-[#473BF0] hover:text-white transition-colors">
+                      <button class="w-full bg-[#473BF0] font-[gilroy2] text-white text-center p-4 font-bold py-3 rounded-md hover:bg-[#473BF01A] hover:text-[#473BF0] transition">
+                        Get started for free
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                
+                   
+              </div>
+            </div>
+
+        </section>
+        
+        <section class="flex flex-col items-center justify-center px-4 pt-12">
+            <div class="max-w-[1114px] mt-14">
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 space-y-16">
+                    <div class="flex items-start space-x-6">
+                    <img src="./Images/pricing-icons/small-right.svg" alt="" class="w-[37px] h-[37px] mt-1 flex-shrink-0">
+                    <div class="space-y-4">
+                    <h3 class="font-bold text-xl font-[gilroy2] leading-tight ">Can I use Albino for my clients?</h3>
+                    <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page. 
+                        Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6">
+                    <img src="./Images/pricing-icons/small-right.svg" alt="" class="w-[37px] h-[37px] mt-1 flex-shrink-0">
+                    <div class="space-y-4">
+                    <h3 class="font-bold text-xl font-[gilroy2] ">Does it work with WordPress?</h3>
+                    <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page. 
+                        Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6">
+                    <img src="./Images/pricing-icons/small-right.svg" alt="" class="w-[37px] h-[37px] mt-1 flex-shrink-0">
+                    <div class="space-y-4">
+                    <h3 class="font-bold text-xl font-[gilroy2]">Do I get free updates?</h3>
+                    <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page. 
+                        Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre.</p>
+                    </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6">
+                    <img src="./Images/pricing-icons/small-right.svg" alt="" class="w-[37px] h-[37px] mt-1 flex-shrink-0">
+                    <div class="space-y-4">
+                    <h3 class="font-bold text-xl font-[gilroy2]">Will you provide support?</h3>
+                    <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page. 
+                        Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre.</p>
+                    </div>  
+                    </div>
+                </div>
+                <p class="text-center mt-5 mb-5 ">Haven’t got your answer? <a href="#" class="text-[#473BF0] hover:underline">Contact our support now</a></p>  
             </div>
         </section>
+        
     </main>
     <footer class="bg-[#161C2D] text-white font-[gilroy] h-auto px-4 sm:px-8 md:px-16 lg:px-24 ">
        <div class="max-w-5xl mx-auto grid w-fit text-center md:text-left grid-rows-5 md:grid-rows-1 md:grid-cols-5 gap-8 pt-22 pb-15">
@@ -147,5 +227,3 @@
     </footer>
 </body>
 </html>
-    
-       

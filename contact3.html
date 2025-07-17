@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brainwave Landing page</title>
+    <title>Brainwave contact page</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="output.css">
@@ -18,40 +18,113 @@
         </div>
     </header>
 
-    <main class="font-[gilroy] min-h-screen overflow-x-hidden bg-[#F4F7FA]">
-        <section class="flex flex-col items-center justify-center px-4 pt-24 pb">
-            <div class="hero justify-center w-full max-w-[601px] h-auto">
-                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Login</h2>
-                <p class="mt-[40px] text-center ">To get started, you need to sign in here.</p>
+    <main class="font-[gilroy] min-h-screen overflow-x-hidden ]">
+        <section class="relative w-full min-h-screen px-4 pt-14 pb-32 md:pb-48">
+          <!-- Hero -->
+          <div class="hero w-full max-w-[601px] mx-auto text-center">
+            <h2 class="hero-title font-[gilroy2] font-normal text-6xl">Contact us</h2>
+            <p class="mt-10">
+              With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.
+            </p>
+          </div>
+      
+          <!-- Form + Contact wrapper -->
+          <div
+            class="relative z-20 mt-12 w-full max-w-6xl mx-auto
+                   flex flex-col items-center
+                   md:flex md:flex-row md:items-start md:justify-center md:gap-16 md:mt-16"
+          >
+            <!-- FORM (left @md+) -->
+            <div class="w-full max-w-[400px] md:mt-0">
+              <div class="font-[gilroy] rounded-md p-10 bg-white shadow-xl transition">
+                <form class="space-y-6" action="index.html" method="get">
+                  <div>
+                    <label for="full-name" class="block font-medium font-[gilroy2]">First &amp; Last Name</label>
+                    <input
+                      type="text"
+                      id="full-name"
+                      name="full-name"
+                      placeholder="i.e. John Doe"
+                      required
+                      class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="block font-medium font-[gilroy2]">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="i.e. john@mail.com"
+                      required
+                      class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label for="message-subject" class="block font-medium font-[gilroy2]">Subject</label>
+                    <input
+                      type="text"
+                      id="message-subject"
+                      name="heading"
+                      placeholder="i.e. I need help"
+                      required
+                      class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label for="message-body" class="block font-medium font-[gilroy2]">Message</label>
+                    <textarea
+                      id="message-body"
+                      name="help-text"
+                      placeholder="Type your message"
+                      required
+                      class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none resize-none overflow-hidden"
+                      rows="1"
+                      oninput="this.style.height='';this.style.height=this.scrollHeight+'px'"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="font-[gilroy2] w-full bg-[#473BF0] text-white py-2 rounded-md hover:bg-blue-700 transition duration-200 mt-10"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
             </div>
         
-
-            <div class="grid grid-cols-1 gap-2 max-w-7xl mx-auto px-4 py-12 ">
-                <!-- Sign in-->
-                <div class=" font-[gilroy] rounded-md p-10 hover:shadow-lg transition bg-white ">
-                    <form class="space-y-6" action="index.html" method="get">
-                        <div>
-                            <label for="email" class="block font-medium font-[gilroy2]">Email</label>
-                            <input type="email" id="email" name="email" placeholder="i.e. john@mail.com" required class="mt-1 w-full px-4 py-1.5 border border-gray-300 rounded-md focus:outline-none ">
-                        </div>
-                        <div>
-                            <div class="flex items-center justify-between">   
-                                <label for="Password" class="block font-medium font-[gilroy2]">Password</label>
-                                <a href="passreset.html" class="text-sm text-[#473BF0]">Forgot password?</a>
-                            </div>
-                            <input type="password" id="password" name="password" placeholder="********" class="mt-1 w-full px-4 py-1.5 border border-gray-300 rounded-md focus:outline-none ">
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="remember" class="h-4 w-4 accent-[#473BF0] focus:ring-[#473BF0] border-gray-300 rounded"/>
-                            <label for="remember" class="ml-2 block text-sm text-[#161C2D]">Remember me</label>
-                        </div>
-                        <button type="submit" class="font-[gilroy2] w-full bg-[#473BF0] text-white py-2 rounded-md hover:bg-blue-700 transition duration-200">
-                            Sign In
-                        </button>
-                    </form>
-                </div>
-                <p class="text-center mt-5 ">Don’t have an account? <a href="signup.html" class="text-[#473BF0] hover:underline">Create an account</a></p>
+            <!-- CONTACT INFO (right @md+) -->
+            <div class="mt-8 md:mt-0 max-w-xl md:text-left text-center">
+              <div class="flex items-start space-x-1">
+                    <img src="./Images/contact-icons/mail.svg" alt="" class="w-[54px] h-[54px] mt-1 flex-shrink-0">
+                        <div class="space-y-4">
+                            <p class=" pt-2">support@brainwave.io <br>
+                             contact@brainwave.io
+                            </p>  
+                        </div> 
+                </div> 
+              <div class="flex items-start space-x-1 pt-2">
+                    <img src="./Images/contact-icons/map.svg" alt="" class="w-[54px] h-[54px] mt-1 flex-shrink-0">
+                        <div class="space-y-4">
+                            <p class="pt-2">
+                            34 Madison Street,<br />
+                             NY, USA 10005
+                            </p> 
+                         </div> 
+                </div> 
             </div>
+          </div>
+      
+          <!-- Map Background -->
+          <div class="absolute inset-x-0 bottom-0 h-[60vh] md:h-1/2 z-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999764882885!2d2.2922926156751415!3d48.85837307928759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66feca4d4b9fb%3A0x2a2f6e7bbdd5a5f3!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1618325573607!5m2!1sen!2sus"
+              class="w-full h-full border-0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+            <div class="absolute inset-0 bg-transparent"></div>
+          </div>
         </section>
     </main>
     <footer class="bg-[#161C2D] text-white font-[gilroy] h-auto px-4 sm:px-8 md:px-16 lg:px-24 ">
@@ -60,7 +133,7 @@
                 <h3 class="text-lg gap-2 mb-5 text-[#FFFFFFA6]">Company</h3>
             <ul class="grid gap-2">
                 <li><a href="index.html">About us</a></li>
-                <li>Contact us</li>
+                <li><a href="contact.html">Contact us</a></li>
                 <li>Careers</li>
                 <li>Press</li>
             </ul>
