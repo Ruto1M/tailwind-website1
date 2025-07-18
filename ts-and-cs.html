@@ -8,28 +8,65 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body class="overflow-x-hidden min-h-screen flex-col">
-    <header>
-        <div class="logo flex justify-between max-w-[1110px] h[50px] mx-auto mt-2 ">
-            <h1 class=" flex font-[rubik] items-center font-bold text-2xl">
-                <a href="index.html">Brainwave.io</a>
-            </h1>
-            <nav class="font-[gilroy2]">
-            <ul class="menu-nav hidden md:flex flex-row  items-center justify-end space-x-6 ">
-                <li><a href="#demos" class="">Demos</a></li>
-                <li><a href="#pages" class="">Pages</a></li>
-                <li><a href="#support" class="">Support</a></li>
-                <li><a href="#contact" class="">Contact</a></li>
-                <div class="w-px h-[21px] bg-gray-300"></div>
-                <li><a href="sign-in.html">Sign In</a></li>
-                <button class="w-[124px] h-[50px]  text-white bg-[#473BF0] rounded-lg">Sign Up</button>
-            </ul>
-        </nav>
-        </div>
-       
+    <!-- navigation -->
+    <header class="flex items-center justify-between max-w-[1110px] h-[50px] mx-auto mt-2 px-4">
+      <!-- Logo -->
+      <h1 class="font-[Rubik] font-bold text-2xl">
+        <a href="index.html">Brainwave.io</a>
+      </h1>
 
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center font-[gilroy2]">
+        <ul class="flex space-x-6 items-center">
+          <li><a href="#demos" class="hover:text-[#473BF0]">Demos</a></li>
+          <li><a href="#pages" class="hover:text-[#473BF0]">Pages</a></li>
+          <li><a href="#support" class="hover:text-[#473BF0]">Support</a></li>
+          <li><a href="contact3.html" class="hover:text-[#473BF0]">Contact</a></li>
+          <div class="w-px h-[21px] bg-gray-300"></div>
+          <li><a href="sign-in.html" class="hover:text-[#473BF0]">Sign In</a></li>
+          <li>
+            <a href="signup.html" class="block w-[124px] h-[50px] text-center leading-[50px] text-white bg-[#473BF0] rounded-lg hover:bg-[#372fd4] transition">
+              Sign Up
+            </a>
+          </li>
+        </ul>
+      </nav>
 
+      <!-- Mobile Controls: Sign Up + Hamburger -->
+      <div class="flex items-center gap-2 md:hidden">
+        <a
+          href="signup.html"
+          class="inline-block px-4 py-2 text-sm font-medium text-white bg-[#473BF0] rounded-lg hover:bg-[#372fd4] transition"
+        >
+          Sign Up
+        </a>
+        <button id="menu-toggle" class="md:hidden p-2 rounded focus:outline-none">
+          <!-- Hamburger Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </header>
+
+    <!-- Mobile Menu (dropdown) -->
+    <div
+      id="mobile-menu"
+      class="hidden absolute left-0 top-[9%] w-full flex flex-col items-center space-y-6 p-5 bg-white shadow-lg transition-all duration-300 ease-in-out opacity-0 -translate-y-5"
+    >
+      <a href="#demos" class="hover:text-[#473BF0]">Demos</a>
+      <a href="#pages" class="hover:text-[#473BF0]">Pages</a>
+      <a href="#support" class="hover:text-[#473BF0]">Support</a>
+      <a href="#contact" class="hover:text-[#473BF0]">Contact</a>
+      <a href="sign-in.html" class="hover:text-[#473BF0]">Sign In</a>
+      <!-- Uncomment below if you ALSO want Sign Up inside the dropdown
+      <a href="signup.html" class="block w-[124px] h-[50px] text-center leading-[50px] text-white bg-[#473BF0] rounded-lg hover:bg-[#372fd4] transition">
+        Sign Up
+      </a>
+      -->
+    </div>
     <main class="font-[gilroy] min-h-screen overflow-x-hidden">
         <section class="flex flex-col items-center justify-center px-4 pt-24 pb-0">
             <div class="hero justify-center w-full max-w-[640px] h-[202px]">
