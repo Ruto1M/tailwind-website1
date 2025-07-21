@@ -42,3 +42,8 @@
 .card-wrapper.flipped .card-inner {
   transform: rotateY(180deg);
 }
+.big-bullet li::marker{
+  font-size: 2.5rem;
+  line-height: 0%;
+  align-items: center;
+}

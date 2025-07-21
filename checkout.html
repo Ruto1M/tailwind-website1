@@ -20,7 +20,7 @@
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center font-[gilroy2]">
         <ul class="flex space-x-6 items-center">
-          <li><a href="details.html" class="hover:text-[#473BF0]">Demos</a></li>
+          <li><a href="#demos" class="hover:text-[#473BF0]">Demos</a></li>
           <li><a href="#pages" class="hover:text-[#473BF0]">Pages</a></li>
           <li><a href="#support" class="hover:text-[#473BF0]">Support</a></li>
           <li><a href="contact3.html" class="hover:text-[#473BF0]">Contact</a></li>
@@ -68,101 +68,152 @@
       -->
     </div>
 
-    <main class="font-[gilroy] min-h-screen overflow-x-hidden">
-        <section class="flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24 pt-24 pb-20">
-            <div class="hero justify-center w-full max-w-[601px] h-[202px]">
-                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Our story</h2>
-                <p class="mt-[50px] text-center ">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
-            </div>
-             <img src="./Images/pg-1-hero.png" alt="hero-title-card" class="flex w-full max-w-[1110px] mt-20 mb-20">
-        </section>
-        <section class="pb-40">
-            <div class="even-columns grid grid-rows-2 gap-2 md:grid-cols-2 mx-auto max-w-6xl w-fit">
-            <div class="font-[gilroy2] grid text-5xl/normal font-normal"><h1 class="">We are here to help the customers to get their success.</h1></div>
-            <div class=" font-normal text-[#161C2D] w-[469px]">
-                <p>We share common trends and strategies for improving your rental income and making sure you stay in high demand of service.<br><br>
-                With lots of unique blocks, you can easily build a page without coding. Build your next landing page. With lots of unique blocks, you can easily build a page without coding any other page.</p></div>
+    <main class="font-[gilroy] min-h-screen bg-[#F4F7FA] py-12 px-4">
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
         
-            </div>
-        </section>
-        
-        <section class=" bg-[#F4F7FA] w-full px-4 sm:px-10 lg:px-20 pt-20 pb-40">
-            <div class="even-columns grid md:grid-cols-2 pl-8 gap-1 mx-auto">
-                <div class="max-w-screen-xl flex">
-                    <div class="odd-columns columns-2 px-4">
-                        <div class="max-w-55 h-64 overflow-hidden rounded-md mt-[-3rem] mb-5">
-                            <img src="./Images/man-wearing-yellow-dress-shirt-using-silver-laptop-3184315.png" alt="img-tl" class=" w-full h-full object-cover transform scale-x-[-1] ">
-                        </div>
-                        <div class="w-55 h-64 overflow-hidden rounded-md">
-                            <img src="./Images/photo-of-women-looking-on-laptop-3182798.png" alt="img-tr" class="w-full h-full object-cover">
-                        </div>
-                        <div class="w-55 h-64 overflow-hidden">
-                            <img src="./Images/photo-of-woman-sitting-on-wooden-table-3182761.png" alt="img-bl" class="w-full h-full object-cover [object-position:90%_5%] rounded-md">
-                        </div>
-                        <div class="w-55 h-64 overflow-hidden rounded-md mt-5">
-                            <img src="./Images/group-of-people-sitting-beside-table-2422295.png" alt="img-br" class=" w-full h-full object-cover [object-position:10%_5%]">
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class=" m-10 mt-10">
-                    <h1 class="font-[gilroy2] grid text-5xl font-normal max-w-[500px]">High skilled coders from worldwide.</h1>
-                    <p class="max-w-[495px] pt-15 pr-1">We share common trends and strategies for improving your rental income and making sure you stay in high demand of service. <br><br>
-                        With lots of unique blocks, you can easily build a page without coding. Build your next landing page. With lots of unique blocks, you can easily build a page without coding any other page.
-                    </p>
-                </div>
-
-            </div>
-                
+        <!-- Billing Details (Left / Larger) -->
+        <div class="lg:col-span-3 bg-white rounded-lg shadow p-6">
+          <h2 class="text-2xl font-semibold mb-6 font-[gilroy2]">Billing Details</h2>
+          <form class="space-y-8" id="checkout-billing-form">
             
-        </section>
-        <section class="flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24 pt-24 pb-40 w-full ">
-            <div class="hero justify-center w-full max-w-[601px] h-[202px]">
-                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Meet our team</h2>
-                <p class="mt-[50px] text-center ">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+            <!-- Contact Info -->
+            <div class="space-y-4">
+              <div>
+                <label for="billing-name" class="block text-gray-700 mb-2">Full Name</label>
+                <input id="billing-name" type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+              </div>
+              <div>
+                <label for="billing-email" class="block text-gray-700 mb-2">Email Address</label>
+                <input id="billing-email" type="email" placeholder="example@mail.com" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+              </div>
+              <div>
+                <label for="billing-phone" class="block text-gray-700 mb-2">Phone Number</label>
+                <input id="billing-phone" type="tel" placeholder="+234 801 234 5678" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+              </div>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4">
-                <div class="">
-                <img src="./Images/team-img/whatever-happens-im-ready-to-face-it.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Joe Bridges</h3>
-                <p>Founder</p>
+          
+            <!-- Location -->
+            <div class="space-y-4">
+              <div>
+                <label for="billing-country" class="block text-gray-700 mb-2">Country</label>
+                <select id="billing-country" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+                  <option value="">Select country…</option>
+                  <option>Nigeria</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>United Kingdom</option>
+                </select>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label for="billing-city" class="block text-gray-700 mb-2">City</label>
+                  <input id="billing-city" type="text" placeholder="Lagos" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+                </div>
+                <div>
+                  <label for="billing-zip" class="block text-gray-700 mb-2">ZIP / Postal Code</label>
+                  <input id="billing-zip" type="text" placeholder="100001" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+                </div>
+              </div>
             </div>
-            <div>
-                <img src="./Images/team-img/well-im-not-in-the-mood-for-any-jokes-today.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Jeffrey Walters</h3>
-                <p>Cheif Executive Officer</p>
+          
+            <!-- Payment Method -->
+            <fieldset class="space-y-4" id="payment-methods">
+              <legend class="block text-gray-700 mb-2 font-semibold font-[gilroy2]">Payment Method</legend>
+            
+              <!-- Card -->
+              <label class="flex items-start space-x-3 cursor-pointer">
+                <input type="radio" name="pay_method" value="card" class="mt-1 accent-[#473BF0]" checked>
+                <span class="text-gray-800">Credit / Debit Card</span>
+              </label>
+            
+              <!-- PayPal -->
+              <label class="flex items-start space-x-3 cursor-pointer">
+                <input type="radio" name="pay_method" value="paypal" class="mt-1 accent-[#473BF0]">
+                <span class="text-gray-800">PayPal</span>
+              </label>
+            
+              <!-- Bank Transfer -->
+              <label class="flex items-start space-x-3 cursor-pointer">
+                <input type="radio" name="pay_method" value="bank" class="mt-1 accent-[#473BF0]">
+                <span class="text-gray-800">Bank Transfer</span>
+              </label>
+            
+              <!-- Pay on Delivery (optional) -->
+              <label class="flex items-start space-x-3 cursor-pointer">
+                <input type="radio" name="pay_method" value="pod" class="mt-1 accent-[#473BF0]">
+                <span class="text-gray-800">Pay on Delivery</span>
+              </label>
+            </fieldset>
+            <!-- Card Details (shown when Card selected; hide w/ JS when others picked) -->
+            <div id="card-fields" class="space-y-4">
+              <div>
+                <label for="card-name" class="block text-gray-700 mb-2">Name on Card</label>
+                <input id="card-name" type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+              </div>
+              <div>
+                <label for="card-number" class="block text-gray-700 mb-2">Card Number</label>
+                <input id="card-number" type="text" inputmode="numeric" placeholder="4242 4242 4242 4242" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label for="card-exp" class="block text-gray-700 mb-2">Expiry (MM/YY)</label>
+                  <input id="card-exp" type="text" placeholder="08/27" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+                </div>
+                <div>
+                  <label for="card-cvv" class="block text-gray-700 mb-2">CVV</label>
+                  <input id="card-cvv" type="password" maxlength="4" placeholder="123" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#473BF0]">
+                </div>
+              </div>
             </div>
-            <div>
-                <img src="./Images/team-img/ready-for-a-date.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Jason Reed</h3>
-                <p>Chief Technology Officer</p>
-            </div>
-            <div>
-                <img src="./Images/team-img/looking-at-the-day-ahead.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Nellie Padilla</h3>
-                <p>Creative Director</p>
-            </div>
-            <div>
-                <img src="./Images/team-img/happiness-good-whiskey-a-good-cigar-and-a-great-conversation.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Dean Bell</h3>
-                <p>Lead Programmer</p>
-            </div>
-            <div>
-                <img src="./Images/team-img/gonna-marry-a-woman-of-my-life.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Pearl Brooks</h3>
-                <p>Digital Marketer</p>
-            </div>
-            <div>
-                <img src="./Images/team-img/thoughtful-handsome-young-man.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Isaiah Griffin</h3>
-                <p>UX Designer</p>
-            </div>
-            <div class="font-[gilroy2] flex items-end text-xl  max-w-42 h-64 ml-3.5">
-                <p>Interested to join our team ? <br><br> <a href="#!" class="text-[#473BF0] font-[gilroy2] whitespace-break-spaces">Apply now    &rarr;</a></p>
-            </div>
-            </div>
-        </section>
+          
+          </form>
+        </div>
+      
+        <!-- Order Summary (Right / Smaller) -->
+        <div class="bg-white rounded-lg shadow p-6 h-fit lg:col-span-2">
+          <h2 class="text-lg font-semibold mb-4 font-[gilroy2]">Order Summary</h2>
         
+          <!-- Products List -->
+          <div class="space-y-4 mb-4">
+            <!-- Item -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <img src="./Images/demo-imgs/speaker.svg" alt="Amazon Echo" class="w-12 h-12 rounded object-contain">
+                <span class="text-gray-700 text-sm leading-snug max-w-[8rem] truncate" title="Amazon Echo Super Extra Bass Home System">
+                  Amazon Echo...
+                </span>
+              </div>
+              <span class="font-medium text-gray-800">$140</span>
+            </div>
+            <!-- Item -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <img src="./Images/demo-imgs/Img.svg" alt="Apple AirPods" class="w-12 h-12 rounded object-contain">
+                <span class="text-gray-700 text-sm leading-snug max-w-[8rem] truncate" title="Apple AirPods with Wired Charging Case">
+                  AirPods Case
+                </span>
+              </div>
+              <span class="font-medium text-gray-800">$150</span>
+            </div>
+            <!-- Repeat / dynamic items go here -->
+          </div>
+        
+          <hr class="my-3 border-t-2 border-dotted border-gray-300">
+        
+          <div class="flex justify-between mb-2 text-gray-700">
+            <span>Delivery Fee</span>
+            <span class="font-medium text-[#2BD67B] uppercase">Free</span>
+          </div>
+          <div class="flex justify-between text-lg font-bold mb-4">
+            <span>Total</span>
+            <span>$290</span>
+          </div>
+        
+          <button class="w-full bg-[#473BF0] text-white py-3 rounded-lg hover:bg-[#372fd4] transition font-[gilroy2]">
+            Place Order
+          </button>
+        </div>
+      </div>
     </main>
     <footer class="bg-[#161C2D] text-white font-[gilroy] h-auto px-4 sm:px-8 md:px-16 lg:px-24 ">
        <div class="max-w-5xl mx-auto grid w-fit text-center md:text-left grid-rows-5 md:grid-rows-1 md:grid-cols-5 gap-8 pt-22 pb-15">
@@ -200,7 +251,7 @@
                 <h3 class="heading-lead text-lg gap-2 mb-5 text-[#FFFFFFA6]">Legal</h3>
             <ul class="grid gap-2">
                 <li>Privacy Policy</li>
-                <li><a href="ts-and-cs.html">Terms & Conditions</a></li>
+                <li>Terms & Conditions</li>
                 <li>Return Policy</li>
             </ul>
             </div>
@@ -256,28 +307,6 @@
         </div>  
     </footer>
 </body>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuToggle.addEventListener('click', () => {
-    const isHidden = mobileMenu.classList.contains('hidden');
-
-    if (isHidden) {
-      // Show
-      mobileMenu.classList.remove('hidden', 'opacity-0');
-      mobileMenu.classList.add('opacity-100');
-      menuToggle.setAttribute('aria-expanded', 'true');
-    } else {
-      // Hide (fade out, then fully hide)
-      mobileMenu.classList.add('opacity-0');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      setTimeout(() => {
-        mobileMenu.classList.add('hidden');
-      }, 300); // match duration-300
-    }
-  });
-});
-</script>
 </html>
+    
+       

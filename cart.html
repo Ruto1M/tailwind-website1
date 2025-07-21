@@ -20,7 +20,7 @@
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center font-[gilroy2]">
         <ul class="flex space-x-6 items-center">
-          <li><a href="details.html" class="hover:text-[#473BF0]">Demos</a></li>
+          <li><a href="#demos" class="hover:text-[#473BF0]">Demos</a></li>
           <li><a href="#pages" class="hover:text-[#473BF0]">Pages</a></li>
           <li><a href="#support" class="hover:text-[#473BF0]">Support</a></li>
           <li><a href="contact3.html" class="hover:text-[#473BF0]">Contact</a></li>
@@ -68,101 +68,145 @@
       -->
     </div>
 
-    <main class="font-[gilroy] min-h-screen overflow-x-hidden">
-        <section class="flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24 pt-24 pb-20">
-            <div class="hero justify-center w-full max-w-[601px] h-[202px]">
-                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Our story</h2>
-                <p class="mt-[50px] text-center ">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
-            </div>
-             <img src="./Images/pg-1-hero.png" alt="hero-title-card" class="flex w-full max-w-[1110px] mt-20 mb-20">
-        </section>
-        <section class="pb-40">
-            <div class="even-columns grid grid-rows-2 gap-2 md:grid-cols-2 mx-auto max-w-6xl w-fit">
-            <div class="font-[gilroy2] grid text-5xl/normal font-normal"><h1 class="">We are here to help the customers to get their success.</h1></div>
-            <div class=" font-normal text-[#161C2D] w-[469px]">
-                <p>We share common trends and strategies for improving your rental income and making sure you stay in high demand of service.<br><br>
-                With lots of unique blocks, you can easily build a page without coding. Build your next landing page. With lots of unique blocks, you can easily build a page without coding any other page.</p></div>
-        
-            </div>
-        </section>
-        
-        <section class=" bg-[#F4F7FA] w-full px-4 sm:px-10 lg:px-20 pt-20 pb-40">
-            <div class="even-columns grid md:grid-cols-2 pl-8 gap-1 mx-auto">
-                <div class="max-w-screen-xl flex">
-                    <div class="odd-columns columns-2 px-4">
-                        <div class="max-w-55 h-64 overflow-hidden rounded-md mt-[-3rem] mb-5">
-                            <img src="./Images/man-wearing-yellow-dress-shirt-using-silver-laptop-3184315.png" alt="img-tl" class=" w-full h-full object-cover transform scale-x-[-1] ">
-                        </div>
-                        <div class="w-55 h-64 overflow-hidden rounded-md">
-                            <img src="./Images/photo-of-women-looking-on-laptop-3182798.png" alt="img-tr" class="w-full h-full object-cover">
-                        </div>
-                        <div class="w-55 h-64 overflow-hidden">
-                            <img src="./Images/photo-of-woman-sitting-on-wooden-table-3182761.png" alt="img-bl" class="w-full h-full object-cover [object-position:90%_5%] rounded-md">
-                        </div>
-                        <div class="w-55 h-64 overflow-hidden rounded-md mt-5">
-                            <img src="./Images/group-of-people-sitting-beside-table-2422295.png" alt="img-br" class=" w-full h-full object-cover [object-position:10%_5%]">
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class=" m-10 mt-10">
-                    <h1 class="font-[gilroy2] grid text-5xl font-normal max-w-[500px]">High skilled coders from worldwide.</h1>
-                    <p class="max-w-[495px] pt-15 pr-1">We share common trends and strategies for improving your rental income and making sure you stay in high demand of service. <br><br>
-                        With lots of unique blocks, you can easily build a page without coding. Build your next landing page. With lots of unique blocks, you can easily build a page without coding any other page.
-                    </p>
-                </div>
+    <main class="font-[gilroy] min-h-screen overflow-x-hidden bg-[#F4F7FA]">
+    <!-- Hero / Heading -->
+    <section class="flex flex-col items-center justify-center px-4 pt-14 pb-0">
+        <div class="hero justify-center w-full max-w-[601px] h-auto">
+        <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center">Your cart</h2>
+        <p class="mt-10 text-center">2 Items on your cart</p>
+        </div>
+    </section>
 
-            </div>
-                
-            
-        </section>
-        <section class="flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24 pt-24 pb-40 w-full ">
-            <div class="hero justify-center w-full max-w-[601px] h-[202px]">
-                <h2 class="hero-title font-[gilroy2] font-normal text-6xl text-center ">Meet our team</h2>
-                <p class="mt-[50px] text-center ">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4">
-                <div class="">
-                <img src="./Images/team-img/whatever-happens-im-ready-to-face-it.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Joe Bridges</h3>
-                <p>Founder</p>
-            </div>
+    <!-- Cart Section -->
+    <section class="p-6 pt-20 font-[gilroy] max-w-[1100px] mx-auto">
+
+        <!-- Header Row (desktop+) -->
+        <div class="hidden md:grid grid-cols-5 text-gray-500 text-sm font-semibold mb-4 px-4 uppercase font-[gilroy2]">
+        <span>Product</span>
+        <span class="text-center">Price</span>
+        <span class="text-center">Quantity</span>
+        <span class="text-center">Total</span>
+        <span class="text-right"> </span>
+        </div>
+
+        <!-- Cart Items Wrapper -->
+        <div class="space-y-4" id="cart-items">
+
+        <!-- Item Template Example -->
+        <div class="bg-white rounded-lg shadow p-4 grid grid-cols-1 md:grid-cols-5 md:items-center gap-4 md:gap-0" data-cart-item>
+            <!-- Product -->
+            <div class="flex items-start md:items-center space-x-4 col-span-2">
+            <img src="./Images/demo-imgs/speaker.svg" class="w-20 h-20 rounded" alt="Amazon Echo Super Extra Bass Home System product image">
             <div>
-                <img src="./Images/team-img/well-im-not-in-the-mood-for-any-jokes-today.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Jeffrey Walters</h3>
-                <p>Cheif Executive Officer</p>
+                <h2 class="font-semibold text-gray-800 leading-snug">Amazon Echo Super Extra Bass Home System</h2>
+                <!-- Mobile labels -->
+                <div class="md:hidden mt-2 text-sm text-gray-500">Price: $70</div>
             </div>
+            </div>
+            <!-- Price (desktop) -->
+            <p class="hidden md:block text-gray-700 font-medium text-center" data-cart-price>$70</p>
+            <!-- Quantity -->
+            <div class="flex justify-start md:justify-center" data-cart-qty-wrapper>
+            <div class="flex items-center space-x-2" data-cart-qty>
+                <button type="button" aria-label="Decrease quantity" class="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 font-bold leading-none" data-cart-decrement>-</button>
+                <input type="text" value="2" readonly class="w-10 text-center border border-gray-300 rounded" data-cart-qty-input>
+                <button type="button" aria-label="Increase quantity" class="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 font-bold leading-none" data-cart-increment>+</button>
+            </div>
+            </div>
+            <!-- Total -->
+            <p class="hidden md:block text-gray-800 font-semibold text-center" data-cart-line-total>$140</p>
+            <!-- Remove -->
+            <div class="flex justify-end" data-cart-remove-wrapper>
+            <button type="button" aria-label="Remove item" class="text-gray-400 hover:text-red-500 transition p-2" data-cart-remove>
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
+                <g clip-path="url(#clip0_0_4299)">
+                    <path d="M1 1L12 12" stroke="currentColor" stroke-linecap="round"/>
+                    <path d="M12 1L1 12" stroke="currentColor" stroke-linecap="round"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_0_4299">
+                    <rect width="12" height="12" fill="white" transform="translate(0.777344 0.800049)"/>
+                    </clipPath>
+                </defs>
+                </svg>
+            </button>
+            </div>
+            <!-- Mobile line total -->
+            <p class="md:hidden text-gray-800 font-semibold" data-cart-line-total-mobile>Total: $140</p>
+        </div>
+        <!-- Item 2 -->
+        <div class="bg-white rounded-lg shadow p-4 grid grid-cols-1 md:grid-cols-5 md:items-center gap-4 md:gap-0" data-cart-item>
+            <!-- Product -->
+            <div class="flex items-start md:items-center space-x-4 col-span-2">
+            <img src="./Images/demo-imgs/Img.svg" class="w-20 h-20 rounded" alt="Apple AirPods with Wired Charging Case product image">
             <div>
-                <img src="./Images/team-img/ready-for-a-date.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Jason Reed</h3>
-                <p>Chief Technology Officer</p>
-            </div>
-            <div>
-                <img src="./Images/team-img/looking-at-the-day-ahead.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Nellie Padilla</h3>
-                <p>Creative Director</p>
-            </div>
-            <div>
-                <img src="./Images/team-img/happiness-good-whiskey-a-good-cigar-and-a-great-conversation.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Dean Bell</h3>
-                <p>Lead Programmer</p>
-            </div>
-            <div>
-                <img src="./Images/team-img/gonna-marry-a-woman-of-my-life.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Pearl Brooks</h3>
-                <p>Digital Marketer</p>
-            </div>
-            <div>
-                <img src="./Images/team-img/thoughtful-handsome-young-man.svg" alt="">
-                <h3 class="mt-5 font-bold text-xl font-[gilroy2]">Isaiah Griffin</h3>
-                <p>UX Designer</p>
-            </div>
-            <div class="font-[gilroy2] flex items-end text-xl  max-w-42 h-64 ml-3.5">
-                <p>Interested to join our team ? <br><br> <a href="#!" class="text-[#473BF0] font-[gilroy2] whitespace-break-spaces">Apply now    &rarr;</a></p>
+                <h2 class="font-semibold text-gray-800 leading-snug">Apple AirPods with Wired Charging Case</h2>
+                <!-- Mobile labels -->
+                <div class="md:hidden mt-2 text-sm text-gray-500">Price: $150</div>
             </div>
             </div>
-        </section>
-        
+            <!-- Price (desktop) -->
+            <p class="hidden md:block text-gray-700 font-medium text-center" data-cart-price>$150</p>
+            <!-- Quantity -->
+            <div class="flex justify-start md:justify-center" data-cart-qty-wrapper>
+            <div class="flex items-center space-x-2" data-cart-qty>
+                <button type="button" aria-label="Decrease quantity" class="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 font-bold leading-none" data-cart-decrement>-</button>
+                <input type="text" value="1" readonly class="w-10 text-center border border-gray-300 rounded" data-cart-qty-input>
+                <button type="button" aria-label="Increase quantity" class="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 font-bold leading-none" data-cart-increment>+</button>
+            </div>
+            </div>
+            <!-- Total -->
+            <p class="hidden md:block text-gray-800 font-semibold text-center" data-cart-line-total>$150</p>
+            <!-- Remove -->
+            <div class="flex justify-end" data-cart-remove-wrapper>
+            <button type="button" aria-label="Remove item" class="text-gray-400 hover:text-red-500 transition p-2" data-cart-remove>
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
+                <g clip-path="url(#clip0_0_4299)">
+                    <path d="M1 1L12 12" stroke="currentColor" stroke-linecap="round"/>
+                    <path d="M12 1L1 12" stroke="currentColor" stroke-linecap="round"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_0_4299">
+                    <rect width="12" height="12" fill="white" transform="translate(0.777344 0.800049)"/>
+                    </clipPath>
+                </defs>
+                </svg>
+            </button>
+            </div>
+            <!-- Mobile line total -->
+            <p class="md:hidden text-gray-800 font-semibold" data-cart-line-total-mobile>Total: $150</p>
+        </div>
+        </div>
+        <!-- Continue Shopping + Order Summary -->
+        <div class="flex flex-col md:flex-row justify-between items-start mt-8 gap-6">
+        <!-- Continue Shopping Button -->
+        <a href="details.html" class="bg-white text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-medium flex items-center gap-2">
+            <span class="inline-block rotate-180">➜</span>
+            <span>Continue Shopping</span>
+        </a>
+    
+        <!-- Order Summary -->
+        <div class="w-full md:w-80 bg-white p-6 rounded-lg shadow" id="order-summary">
+            <h2 class="text-lg font-semibold mb-4 font-[gilroy2]">Order Details</h2>
+            <div class="flex justify-between mb-2 text-gray-700">
+            <span id="order-items-count">02 items</span>
+            <span class="font-medium text-gray-800" id="order-items-total">$290</span>
+            </div>
+            <div class="flex justify-between mb-2 text-gray-700">
+            <span>Delivery Fee</span>
+            <span class="font-medium text-[#2BD67B] uppercase" id="order-delivery">Free</span>
+            </div>
+            <hr class="my-3 border-t-2 border-dotted border-gray-300">
+            <div class="flex justify-between text-lg font-bold mb-4">
+            <span>Total</span>
+            <span id="order-grand-total">$290</span>
+            </div>
+            <button class="w-full bg-[#473BF0] text-white py-3 rounded-lg hover:bg-[#372fd4] transition font-[gilroy2]" id="checkout-button">
+             <a href="checkout.html">Proceed to Checkout</a>
+            </button>
+        </div>
+        </div>
+    </section>
     </main>
     <footer class="bg-[#161C2D] text-white font-[gilroy] h-auto px-4 sm:px-8 md:px-16 lg:px-24 ">
        <div class="max-w-5xl mx-auto grid w-fit text-center md:text-left grid-rows-5 md:grid-rows-1 md:grid-cols-5 gap-8 pt-22 pb-15">
@@ -200,7 +244,7 @@
                 <h3 class="heading-lead text-lg gap-2 mb-5 text-[#FFFFFFA6]">Legal</h3>
             <ul class="grid gap-2">
                 <li>Privacy Policy</li>
-                <li><a href="ts-and-cs.html">Terms & Conditions</a></li>
+                <li>Terms & Conditions</li>
                 <li>Return Policy</li>
             </ul>
             </div>
@@ -256,28 +300,6 @@
         </div>  
     </footer>
 </body>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuToggle.addEventListener('click', () => {
-    const isHidden = mobileMenu.classList.contains('hidden');
-
-    if (isHidden) {
-      // Show
-      mobileMenu.classList.remove('hidden', 'opacity-0');
-      mobileMenu.classList.add('opacity-100');
-      menuToggle.setAttribute('aria-expanded', 'true');
-    } else {
-      // Hide (fade out, then fully hide)
-      mobileMenu.classList.add('opacity-0');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      setTimeout(() => {
-        mobileMenu.classList.add('hidden');
-      }, 300); // match duration-300
-    }
-  });
-});
-</script>
 </html>
+    
+       
