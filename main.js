@@ -1,26 +1,35 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
 
-  menuToggle.addEventListener('click', () => {
-    const isHidden = mobileMenu.classList.contains('hidden');
+  let isMenuOpen = false;
 
-    if (isHidden) {
-      // Show
-      mobileMenu.classList.remove('hidden', 'opacity-0');
-      mobileMenu.classList.add('opacity-100');
-      menuToggle.setAttribute('aria-expanded', 'true');
+  menuToggle.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+
+    // Animate hamburger
+    menuToggle.classList.toggle('menu-open', isMenuOpen);
+
+    if (isMenuOpen) {
+      // Show menu
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => {
+        mobileMenu.classList.remove('opacity-0', '-translate-y-5');
+        mobileMenu.classList.add('opacity-100', 'translate-y-0');
+      }, 10);
     } else {
-      // Hide (fade out, then fully hide)
-      mobileMenu.classList.add('opacity-0');
-      menuToggle.setAttribute('aria-expanded', 'false');
+      // Hide menu
+      mobileMenu.classList.remove('opacity-100', 'translate-y-0');
+      mobileMenu.classList.add('opacity-0', '-translate-y-5');
+
+      // After transition, hide it
       setTimeout(() => {
         mobileMenu.classList.add('hidden');
-      }, 300); // match duration-300
+      }, 500);
     }
   });
 });
+
 
 
 function togglePayment(method) {

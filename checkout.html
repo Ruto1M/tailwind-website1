@@ -61,18 +61,14 @@
       <a href="contact2.html" class="hover:text-[#473BF0]">Support</a>
       <a href="contact.html" class="hover:text-[#473BF0]">Contact</a>
       <a href="sign-in.html" class="hover:text-[#473BF0]">Sign In</a>
-      <!-- Uncomment below if you ALSO want Sign Up inside the dropdown
-      <a href="signup.html" class="block w-[124px] h-[50px] text-center leading-[50px] text-white bg-[#473BF0] rounded-lg hover:bg-[#372fd4] transition">
-        Sign Up
-      </a>
-      -->
     </div>
 
     <main class="font-[gilroy] min-h-screen bg-[#F4F7FA] py-12 px-4">
-      <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8 items-start">
+      <div class="max-w-6xl mx-auto flex lg:grid lg:grid-cols-3 gap-8 items-start justify-center flex-col lg:flex-none">
+
         
-        <!-- Billing Details (Left / Larger) -->
-        <div class="lg:col-span-2 w-full lg:max-w-[400px] mx-auto bg-white rounded-lg shadow p-6">
+        <!-- Billing Details -->
+        <div class="lg:col-span-2 w-full lg:max-w-[570px] mx-auto bg-white rounded-lg shadow p-6">
           <h2 class="text-2xl font-semibold mb-6 font-[gilroy2]">Billing Details</h2>
           <form class="space-y-8" id="checkout-billing-form">
             
@@ -126,7 +122,8 @@
                     <input type="radio" name="pay_method" value="card" class="accent-[#473BF0]" checked>
                     <span class="text-gray-800 font-medium">Credit cards</span>
                   </label>
-                  <img src="./Images/checkout/accepted-cards.svg" alt="Accepted Cards" class="h-5">
+                  <img src="./Images/checkout/accepted-cards.svg" alt="Accepted Cards" class="h-auto max-w-[164px]">
+
                 </div>
 
                 <!-- Hidden Card Form -->
@@ -170,7 +167,7 @@
         </div>
       
         <!-- Order Summary (Right / Smaller) -->
-          <div class="lg:col-span-1 bg-white rounded-lg shadow p-6 h-fit ">
+          <div class="lg:col-span-1 bg-white rounded-lg shadow p-6 h-fit max-w-[366px] w-full">
             <h2 class="text-lg font-semibold mb-4 font-[gilroy2]">Order Summary</h2>
           
             <!-- Products List -->
